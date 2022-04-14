@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 0 2rem ;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 2rem;
+    color: rgb(166, 255, 0);
+}
+
+.toggle {
+    display: none;
+    color: rgb(166, 255, 0);
+}
+    
+.menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        width: 500px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.prenom {
+    font-family: sans-serif;
+    display: block;
+    margin-left: 50px;
+    top: 30%;
+    font-size: 20px;
+    color: rgb(166, 255, 0);
+}
+
+/* Section image */
+.info {
+    height: 100vh;
+    background: url(img/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text{
+    font-family: sans-serif;
+    position: absolute;
+    display: block;
+    margin-top: 200px;
+    margin-left: 70%;
+    font-family: sans-serif;
+    color: #000;
+    /* right: -65%; */
+   /* align-items: flex-end;*/
+}
+
+.bouton_main_text{
+    position: absolute;
+    display: block;
+    margin-top: 250px;
+    margin-left: 77%;
+    text-decoration: none;
+    color: #0D1B2B;
+    background-color: #E6E7E4;
+    border: 1px solid transparent;
+    padding: 10px;
+}
+
+@media all and (max-width: 991px) {
+
+    header {
+        background: transparent;
+    }
+    
+    .toggle {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+        margin-right: 200px;
+    }
+
+    .logo {
+        position: relative;
+        z-index: 20;
+    }
+
+    .ouvrir {
+        display: block;
+    }
+    
+    .fermer {
+        display: none;
+    }
+    .open .ouvrir {
+        display: none;
+    }
+
+    .open .fermer {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        background: #000;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+
+    .menu li a {
+        font-size: 2rem;
+    }
+
+    .open .menu {
+        transform: translateX(0);
+    }
+    .text {
+        position: absolute;
+        display: block;
+        margin-left: 50%;
+    }
+}
+
