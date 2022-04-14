@@ -162,7 +162,7 @@ nav {
     border-color: #000;
     border-radius: 20px;
     margin-left: 1000px;
-    margin-top: -18%;
+    margin-top: -280px;
     margin-bottom: 20px;
     width: 400px;
     height: 300px;
@@ -178,6 +178,10 @@ nav {
     list-style-position : outside;
 }
 
+.pearltree {
+    margin-top: 20px;
+    margin-left: 300px;
+}
 
 @media all and (max-width: 991px) {
 
