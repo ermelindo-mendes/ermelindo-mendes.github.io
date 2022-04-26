@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Damien Ikovic - Nicolas Tocque - Ermelindo Lopes">
+    <title>G.Store - Shopping</title>
+    <link rel="stylesheet" href="shop_style.css">
+</head>
+<body>
+
+	<!-- Box Shop -->
+    <div class="box">
+        <h1>SHOPPING</h1>
+        <form action="shop.php" method="post">
+
+            <label>Genre :</label><br><br>
+            <select name="Genre" required>
+                <option value="" selected disabled hidden></option>
+				<option value="M">Homme</option>
+				<option value="F">Femme</option>
+            </select><br><br>
+
+            <label>Vêtements :</label><br><br>
+			<select name="Type" required>
+				<option value="" selected disabled hidden></option>
+				<option value="Chemise">Chemise</option>
+				<option value="Pantalon">Pantalon</option>
+				<option value="Veste">Veste</option>
+				<option value="Robe">Robe</option>
+				<option value="Jupe">Jupe</option>
+			</select><br><br>
+
+			<label>Taille :</label><br><br>
+			<select name="Taille" required>
+				<option value="" selected disabled hidden></option>
+				<option type ="text" value="1an-6ans">1an-6ans</option>
+				<option type ="text" value="7ans-12ans">7ans-12ans</option>
+				<option type ="text" value="13ans-18ans">13ans-18ans</option>
+				<option type ="text" value="Adulte">Adulte</option>
+			</select><br><br>
+
+			<label>Couleur :</label><br><br>
+			<select name="Couleur" required>
+				<option value="" selected disabled hidden></option>
+				<option value="Rouge">Rouge</option>
+				<option value="Vert">Vert</option>
+				<option value="Noir">Noir</option>
+				<option value="Beige">Beige</option>
+				<option value="Bleu">Bleu</option>
+			</select><br><br>
+
+			<label>Quantité :</label><br><br>
+            <input class="qte" type="number" name="qte" min="0" required/><br><br><br>
+
+			<label>Consultation :</label>
+            <input type="radio" name="achoix" value="consulter"/>
+
+			<label>achat :</label>
+            <input type="radio" name="achoix" value="acheter"/>
+
+            <input type="submit" value="Envoi" />
+        </form>
+
+    </div>
+
+</body>
+</html>
